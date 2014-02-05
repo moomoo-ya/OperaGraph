@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  h2 Nodes
+  ul
+  each node in logs['nodes']
+    li #{node}
+
+  h2 Logs
+  ul
+  each log in logs['logs']
+    li #{log}
+
